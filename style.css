@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", sans-serif;;
+    --font3: "Playwrite CU", cursive;
+    --font4: "Caveat", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    padding-top: 50px;
+    font-family: var(--font2), small-caps;
+    font-size: 7em;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+p.milton {
+    color: white;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 650px) {
+    p.milton {
+        font-size: .5em;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.8em;
+    padding-left: 30px;
+    font-family: var(--font4);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+/*@media (max-width: 900px) {
+    selection {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    selection {
+        font-size: 10px;
+    }
+}   Não deu certo */
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.466);
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('imagens/pexels-pixabay-60628.jpg');
+    background-position: center right;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('imagens/pexels-cottonbro-4778341.jpg');
+    background-position: center left;
+    background-size: cover;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.623);
+    text-shadow: 1px 1px 0px black;
+}
+
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.criador {
+    color: white;
+    padding: 10px
+}
